@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="gratis faktura program" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ee0a0de948.js"
+      crossorigin="anonymous"
+      ></script>
+      <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+      <script defer src="./src/script.js"></script>
+      <script defer src="./src/gratisfaktura.js"></script>
+      <script defer src="./src/kundbas.js"></script>
+    <script defer src="./src/nyfakturaRad.js"></script>
+    <title>Gratis Faktura Program</title>
+  </head>
+  <body>
+    <div class="newcustomer-modal">
+      <div class="currentCustomer-modal"></div>
+    </div>
+    <div class="menu-container">
+      <div class="add-container-btn">
+        1
+        <button class="addForetag">Dina Uppgifter</button>
+      </div>
+      <div class="skapa-fakt-container">
+        2
+        <button class="skapa-fakt-btn">Skapa Faktura</button>
+      </div>
+      <div class="ladda-ner-fakt">
+        3
+        <button class="download">Download Invoice</button>
+      </div>
+    </div>
+    <div id="ivoice">
+      <div class="heading-container">
+        <div class="logo-container">
+          <p for="img" class="logoTitle">ladda upp din logotype:</p>
+          <p for="img" class="logoTitle">
+            har du ingen så kommer inte detta med när du laddar ner
+          </p>
+          <input
+            type="file"
+            id="img"
+            name="image/png image/jpg image/jpeg"
+            value="test"
+          />
+          <img src="" class="uploaded-holder" alt="" />
+          <h4 class="foretaget"></h4>
+        </div>
+        <div class="faktura-container">
+          <h1>Faktura</h1>
+          <div class="datum-container">
+            <div class="datum">
+              <p class="para-datum">Faktura Datum</p>
+              <span class="current-date"></span>
+            </div>
+            <div class="nummer">
+              <p>Faktura Nr</p>
+              <span class="faktura-nummer"></span>
+            </div>
+          </div>
+          <div class="kunder-container">
+            <h4>Kund</h4>
+
+            <div class="line-breaker"></div>
+
+            <p class="foretag"></p>
+            <p class="foretags-adress"></p>
+            <p class="postnummer-ort"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="referens-container">
+        <div class="oss-tillhanda">
+          <div class="forfallo-container">
+            <p>Betalning oss tillhanda</p>
+            <p class="forfallo-datum"></p>
+          </div>
+          <div class="var-referens-container">
+            <p>Vår referens</p>
+            <p class="var-referens"></p>
+          </div>
+          <div class="er-referens-container">
+            <p>Er referens</p>
+            <p class="er-referens"></p>
+          </div>
+        </div>
+      </div>
+      <div class="avgresare-container">
+        <div class="new-invoice-line-container hidden">
+          <button class="new-invoice-button">Ny Fakturarad</button>
+          <p class="new-line-paragrafen">
+            Skapa ny fakturarad här. Knappen och texten kommer ej med när du
+            laddar ner fakturan :)
+          </p>
+          <div class="new-line-modal-container hidden">
+            <div class="new-line-content-container"></div>
+          </div>
+        </div>
+        <div class="avgrensare-top">
+          <p>Artikel</p>
+          <p>Beskrivning</p>
+          <p class="antalet">Antal</p>
+          <p>Pris</p>
+          <p>Belopp</p>
+        </div>
+        <div class="avgrensare-mitt">
+          <div class="artikel-nummer-container">
+            <p class="artikel-nummer"></p>
+          </div>
+          <div class="artikel-beskrivning-container">
+            <p class="artikel-beskrivning"></p>
+          </div>
+          <div class="artikel-antal-container">
+            <p class="artikel-antal"></p>
+          </div>
+          <div class="artikel-pris-container">
+            <p class="artikel-pris"></p>
+          </div>
+          <div class="artikel-belopp-container">
+            <p class="artikel-belopp"></p>
+          </div>
+        </div>
+        <div class="avgrensare-bottom">
+          <div class="bottom-vantser">
+            <p class="faktura-messsage"></p>
+          </div>
+
+          <div class="bottom-hoger">
+            <div class="bottom-text">
+              <p>Netto</p>
+              <p>Fakturaavgift</p>
+              <p class="moms-paragraf">Moms</p>
+
+              <p class="ATTBETALA">ATT BETALA</p>
+            </div>
+            <div class="bottom-varden">
+              <p class="netto-vard"></p>
+              <p class="faktura-avgift"></p>
+              <p class="netto-moms"></p>
+
+              <p class="tot-vard"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-avgrensare"></div>
+      <div class="footer">
+        <div class="footer-adress">
+          <p>Postadress</p>
+          <span class="foretaget-adress"> </span>
+          <span class="foretaget-postnr"> </span>
+        </div>
+        <div class="footer-telenummer">
+          <p>Telefon</p>
+          <span class="foretag-mobil"></span>
+          <span class="foretag-fast"></span>
+        </div>
+        <div class="footer-bank">
+          <div class="bank-post-giro">
+            <p class="giro-typ"></p>
+            <span class="giro-nummer"></span>
+          </div>
+        </div>
+        <div class="org-nummer">
+          <p>Org.nummer</p>
+          <span class="orgNummer"></span>
+        </div>
+      </div>
+      <div class="botten-skrapet"></div>
+    </div>     
+</html>

@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-primary: #678e3e;
+  --primaryColor: #f15025;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+.logoTitle {
+  font-size: 0.7rem;
+}
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.menu-container button {
+  background: #f15025;
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f15025;
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  border-radius: 3px 3px;
+}
+.menu-container button:hover {
+  background: transparent;
+  border-color: #f15025;
+  color: #f15025;
+}
+#ivoice {
+  margin: 0 auto;
+  width: 800px;
+  height: 1100px;
+  border: 1px solid black;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 5px 5px;
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.hidden {
+  display: none;
+}
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container {
+  margin-left: 1rem;
+}
+.faktura-container {
+  margin-top: 1rem;
+  margin-left: 20rem;
+}
+.datum-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+.faktura-nummer {
+  margin-left: 0.5rem;
+}
+.datum-container span {
+  font-size: 0.9rem;
+}
+
+.current-date {
+  margin-left: 0.5rem;
+}
+.para-datum {
+  margin-right: 2rem;
+}
+.faktura-container h1 {
+  margin-bottom: 1rem;
+}
+.logo-img {
+  margin-top: 0.6rem;
+  width: 16rem;
+  height: 8rem;
+  background-size: cover;
+}
+.datum-container p {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.datum-container span {
+  font-weight: bold;
+}
+.kunder-container p {
+  font-weight: 300;
+}
+
+.foretaget {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-left: 0.4rem;
+}
+.oss-tillhanda {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.oss-tillhanda div {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.oss-tillhanda p {
+  font-size: 0.8rem;
+}
+.forfallo-datum,
+.er-referens,
+.var-referens {
+  font-weight: bolder;
+}
+.avgresare-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avgrensare-top {
+  display: flex;
+  flex-direction: row;
+  height: 1.6rem;
+  width: 700px;
+  border: 2px solid black;
+  border-bottom: 0.5px solid black;
+  background: #f3f4f6;
+  letter-spacing: 3px;
+  justify-content: space-between;
+}
+
+.avgrensare-mitt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  text-align: center;
+  width: 700px;
+  border: 2px solid black;
+  height: 55vh;
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+}
+.avgrensare-mitt p {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-left: 1rem;
+}
+
+.avgrensare-bottom {
+  width: 700px;
+  height: 100px;
+  border: 2px solid black;
+  border-top: 0.5px solid black;
+}
+.avgrensare-mitt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-vantser {
+  height: 100px;
+  width: 350px;
+  border: 1px solid black;
+  border-top: 0.5px;
+  border-left: 0.5px;
+  background: #f3f4f6;
+}
+.bottom-hoger {
+  height: 100px;
+  width: 350px;
+  border: 1px solid rgb(136, 119, 119);
+  border-right: 0.5px;
+  border-top: 0.5px;
+  border-left: 0.5px;
+  background: #f9fafb;
+}
+.bottom-text {
+  margin-left: 0.2rem;
+}
+.avgrensare-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.faktura-messsage {
+  font-size: 0.8rem;
+  margin-left: 2px;
+}
+.bottom-hoger {
+  display: flex;
+}
+.bottom-varden {
+  margin-left: 7.5rem;
+}
+.bottom-varden p {
+  letter-spacing: 1.5px;
+}
+.fa-bitcoin {
+  color: #e6a204;
+  font-size: 1rem;
+}
+.fa-ethereum {
+  color: rgb(39, 108, 236);
+  font-size: 1rem;
+}
+.kunder-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background: #e9b949;
+  padding: 2rem 2rem 5rem 2rem;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
+.line-breaker {
+  margin: 0.3rem auto;
+  width: 5rem;
+  height: 0.11rem;
+  color: black;
+  background: black;
+  opacity: 0.65;
+}
+.footer-avgrensare {
+  margin: 0 auto;
+  height: 0.5rem;
+  width: 748px;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary),
+    #e9b949,
+    var(--clr-primary)
+  );
+}
+.heading-container {
+  position: relative;
+}
+.logo-container {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer p {
+  font-size: 0.8rem;
+}
+.footer span {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+.footer-adress,
+.footer-telenummer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* main page */
+.grid-container,
+.createInvoiceForm {
+  display: flex;
+  flex-direction: column;
+}
+.grid-container,
+input,
+label,
+select,
+option {
+  padding: 0.3rem;
+  margin-bottom: 0.3em;
+  letter-spacing: 1px;
+}
+
+.skapa {
+  margin-top: 2rem;
+  width: 5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  background: white;
+  color: #f15025;
+  border: 2px solid #f15025;
+  border-radius: 5px 5px;
+  cursor: pointer;
+  margin-bottom: 20rem;
+}
+.skapa:hover {
+  background: #f15025;
+  border: none;
+  color: white;
+}
+.referens-container p {
+  text-align: center;
+}
+.create-customer-btn {
+  margin-top: 2rem;
+  width: 6rem;
+  height: 3rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  background: white;
+  color: #f15025;
+  border: 2px solid #f15025;
+  border-radius: 5px 5px;
+  cursor: pointer;
+  margin-bottom: 20rem;
+}
+.create-customer-btn:hover {
+  background: #f15025;
+  border: none;
+  color: white;
+}
+.hide {
+  display: none;
+}
+.tot-vard,
+.ATTBETALA {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.botten-skrapet {
+  margin: 0 auto;
+  width: 700px;
+  height: 1px;
+  background: black;
+  opacity: 0.3;
+}
+.referens-container p {
+  text-transform: capitalize;
+}
+.new-invoice-line-container {
+  position: absolute;
+  left: 7%;
+  top: 40%;
+}
+.new-invoice-line-container button {
+  background: #f15025;
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f15025;
+  padding: 0.1rem 0.1rem;
+  letter-spacing: 1px;
+  border-radius: 3px 3px;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.new-invoice-line-container button:hover {
+  background: transparent;
+  border-color: #f15025;
+  color: #f15025;
+}
+.new-invoice-line-container p {
+  font-size: 0.65rem;
+}
+input[type="file"] {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.new-line-content-container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 254, 254);
+  z-index: 2;
+  height: 15rem;
+  width: 21rem;
+  border: 1px solid black;
+  text-align: center;
+}
+.newLineFormToRender input,
+option,
+label {
+  text-transform: lowercase;
+  height: 1.3rem;
+  width: 18rem;
+  font-size: 0.7rem;
+  margin: 0.2rem 0;
+}
+input[type="text"] {
+  text-transform: capitalize;
+}
+p {
+  text-transform: capitalize;
+}
+.footer span {
+  text-transform: capitalize;
+  font-size: 0.69rem;
+}
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 25px;
+}

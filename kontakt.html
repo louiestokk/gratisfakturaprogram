@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="gratis faktura program" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/ee0a0de948.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <title>Gratis faktura program</title>
+    <style>
+      .form-cont {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        width: 20rem;
+        height: 2rem;
+        margin: 0.2rem 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-radius: 3px 3px;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      textarea {
+        width: 20rem;
+        margin: 0.2rem 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-radius: 3px 3px;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      .kontakt-btn {
+        width: 20rem;
+        border: 1px solid white;
+        background: transparent;
+        color: grey;
+        letter-spacing: 2px;
+        text-transform: lowercase;
+        height: 2rem;
+        border-radius: 3px 3px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        cursor: pointer;
+      }
+      .kontakt-btn:hover {
+        opacity: 0.6;
+        background: #ee7e5e;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .divider {
+        margin: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body id="gratis faktura program">
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo.svg" class="nav-logo" alt="" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a href="index.html">Hem</a></li>
+
+          <li><a href="fakturamall.html">Faktura</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="index.html">Hem</a></li>
+
+          <li><a href="fakturamall.html">Faktura</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <ul class="social-icons">
+          <!-- single item -->
+
+          <!-- single item -->
+          <li>
+            <a href="#" class="social-icon"> SEK </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="#" class="social-icon"> € </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="#" class="social-icon"> $ </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="#" class="social-icon">
+              <i class="fab fa-bitcoin"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="#" class="social-icon">
+              <i class="fab fa-ethereum"></i>
+            </a>
+          </li>
+
+          <!-- end of single item -->
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+
+    <section class="section single-page">
+      <!-- section title -->
+      <div class="section-title">
+        <h1>Kontakt</h1>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center page-info kontakt-page">
+        <p>Behöver du support eller vi ha hjälp med webbutveckling?</p>
+        <form
+          class="gform"
+          method="POST"
+          data-email="louiestokk@gmail.com"
+          action="https://script.google.com/macros/s/AKfycbzyIf9bCJVdv6DJIyXghADAMm1FaWKK1ZgR1W4sbK7T9rgulQ4K3TJvmPQuSB-cb78w/exec"
+        >
+          <div class="form-cont">
+            <input type="text" name="fakturaname" placeholder="namn" />
+            <input type="email" name="fakturaemail" placeholder="email" />
+            <textarea
+              name="fakturamsg"
+              id="msg"
+              cols="30"
+              rows="5"
+              placeholder="meddelande"
+            ></textarea>
+            <button type="submit" class="kontakt-btn">Skicka</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="social-icons">
+        <!-- single item -->
+        <li>
+          <a href="#" class="social-icon"> SEK </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="#" class="social-icon"> € </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="#" class="social-icon"> $ </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="#" class="social-icon">
+            <i class="fab fa-bitcoin"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="#" class="social-icon">
+            <i class="fab fa-ethereum"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+      </ul>
+
+      <p>&copy; <span id="date"></span> Stokk. All rights reserved.</p>
+    </footer>
+    <!-- <div class="nav-btn-container">
+      <i class="fas fa-bars"></i>
+    </div> -->
+    <!-- end of navbar -->
+    <!-- navbar -->
+    <!-- <nav class="main-navbar">
+      <ul class="gratis faktura">
+        <li>
+          <a href="./index.html" rel="external nofollow">Hem</a>
+        </li>
+        <li>
+          <a href="./fakturamall.html" rel="external nofollow">Skapa Faktura</a>
+        </li>
+        <li>
+          <a href="./layout.html" rel="external nofollow">Kontakt</a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <!--  end navbar -->
+
+    <!-- hero banner section -->
+    <!-- <header class="hero-header">
+      <div class="hero-banner">
+        <h3 id="gratisfakturaprogram">Gratis Faktura Program</h3>
+
+        <h4>Behöver du support eller vill ha hjälp med webbutveckling?</h4>
+        <div class="divider"></div>
+        <h2>Kontakta Oss</h2>
+      </div>
+    </header> -->
+
+    <!-- end of hero banner section -->
+    <script>
+      const date = new Date().getFullYear();
+      document.getElementById("date").textContent = date;
+      document.querySelector(".kontakt-btn").addEventListener("click", (e) => {
+        setTimeout(() => {
+          alert("tack för att du kontaktar oss!");
+          location.href = "./index.html";
+        }, 400);
+      });
+
+      const navbar = document.querySelector("#nav");
+      const navBtn = document.querySelector("#nav-btn");
+      const closeBtn = document.querySelector("#close-btn");
+      const sidebar = document.querySelector("#sidebar");
+
+      const skapaBtn = document.querySelector(".hero-btn");
+      // add fixed class to navbar
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 80) {
+          navbar.classList.add("navbar-fixed");
+        } else {
+          navbar.classList.remove("navbar-fixed");
+        }
+      });
+      // show sidebar
+      navBtn.addEventListener("click", function () {
+        sidebar.classList.add("show-sidebar");
+      });
+      closeBtn.addEventListener("click", function () {
+        sidebar.classList.remove("show-sidebar");
+      });
+    </script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="./src/form-submission-handler.js"
+    ></script>
+  </body>
+</html>
